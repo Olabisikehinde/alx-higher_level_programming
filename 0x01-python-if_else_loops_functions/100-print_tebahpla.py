@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-# Author - Abdullahi Kehinde 
-
-i = 0
-for c in range(ord('z'), ord('a') - 1, -1):
-    print("{}".format(chr(c - i)), end="")
-    i = 32 if i == 0 else 0
+i = 122
+while i != 96:
+    n = i
+    if n % 2 == 1:
+        n = ord(chr(n)) - 32
+    print("{}".format(chr(n)), end="")
+    i = i - 1

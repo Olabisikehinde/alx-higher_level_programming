@@ -1,4 +1,5 @@
 #!/usr/bin/python3
-# Author - Abdullahi Kehinde
-    if chr(letter) != 'q' and chr(letter) != 'e':
-        print("{}".format(chr(letter)), end="")
+for i in range(97, 123):
+    j = chr(i)
+    if j != 'q' and j != 'e':
+        print("{}".format(j), end="")
